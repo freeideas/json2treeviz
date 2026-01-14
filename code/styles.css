@@ -1,0 +1,120 @@
+/* $REQ_STATIC_001: Static Single-Page Application */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* $REQ_INPUT_FORM_001: Input Form is Collapsible */
+.input-container {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-header h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.toggle-button {
+    padding: 8px 16px;
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* $REQ_JSON_INPUT_001: Textarea for JSON Text */
+/* $REQ_JSON_INPUT_002: Drag-and-Drop Zone */
+#json-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px dashed #ccc;
+    border-radius: 4px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    resize: vertical;
+    min-height: 150px;
+}
+
+#json-input:focus {
+    outline: none;
+    border-color: #0074D9;
+}
+
+#json-input::placeholder {
+    color: #999;
+}
+
+.input-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+/* $REQ_JSON_INPUT_003: File Picker */
+.file-button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.file-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* $REQ_JSON_INPUT_006: Visualize Button */
+.visualize-button {
+    padding: 10px 30px;
+    background-color: #2ECC40;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.visualize-button:hover {
+    background-color: #29b339;
+}
+
+/* $REQ_TREE_RENDERING_001: Render JSON as Tree */
+#tree-container {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

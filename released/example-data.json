@@ -1,0 +1,26 @@
+[
+    {
+        "TABLE_NAME": "org_units",
+        "ROWS": [
+            { "id": 1, "parent-id": null, "name": "Company" },
+            { "id": 2, "parent-id": 1, "name": "Engineering" },
+            { "id": 3, "parent-id": 1, "name": "Sales" },
+            { "id": 4, "parent-id": 2, "name": "Frontend Team" },
+            { "id": 5, "parent-id": 2, "name": "Backend Team" },
+            { "id": 6, "parent-id": 3, "name": "North Region" },
+            { "id": 7, "parent-id": 3, "name": "South Region" }
+        ]
+    },
+    {
+        "TABLE_NAME": "equipment",
+        "ROWS": [
+            { "id": 101, "parent-id": null, "type": "server", "name": "DC-MAIN" },
+            { "id": 102, "parent-id": 101, "type": "workstation", "name": "WS-ENG-01" },
+            { "id": 103, "parent-id": 101, "type": "workstation", "name": "WS-ENG-02" },
+            { "id": 104, "parent-id": 101, "type": "printer", "name": "PRN-FLOOR2" },
+            { "id": 105, "parent-id": null, "type": "server", "name": "DC-BACKUP" },
+            { "id": 106, "parent-id": 105, "type": "workstation", "name": "WS-SALES-01" },
+            { "id": 107, "parent-id": 105, "type": "printer", "name": "PRN-FLOOR1" }
+        ]
+    }
+]

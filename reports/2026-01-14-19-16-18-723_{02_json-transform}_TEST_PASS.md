@@ -1,0 +1,28 @@
+# Test Report: 02_json-transform
+**Timestamp:** 2026-01-14-19-16-18-723
+**Status:** PASS
+**Test File:** tests\passing\02_json-transform.py
+
+---
+
+## Output
+
+```
+✓ $REQ_TRANSFORM_001: JSON text parsed successfully
+✓ $REQ_TRANSFORM_002: Objects become nodes
+✓ $REQ_TRANSFORM_003: Primitive fields shown as labels
+✓ $REQ_TRANSFORM_004: Null fields not shown
+✓ $REQ_TRANSFORM_005: Nested objects become children
+✓ $REQ_TRANSFORM_006: Arrays become nodes with element children
+✓ $REQ_TRANSFORM_007: Hierarchy override for arrays with id/parent_id
+✓ $REQ_TRANSFORM_008: Parent ID field pattern matching works
+✓ $REQ_TRANSFORM_009: Parent/child relationships by ID matching
+
+All JSON transform tests passed!
+Installed 4 packages in 538ms
+
+```
+
+---
+
+**Result:** ✓ PASS

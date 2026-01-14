@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tree Visualizer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- $REQ_JSON_INPUT_001: Textarea for JSON Text -->
+    <!-- $REQ_INPUT_FORM_001: Input Form is Collapsible -->
+    <div id="input-container" class="input-container">
+        <div class="input-header">
+            <h1>JSON Tree Visualizer</h1>
+            <button id="toggle-form" class="toggle-button" style="display: none;">Edit Input</button>
+        </div>
+
+        <div id="input-form" class="input-form">
+            <!-- $REQ_JSON_INPUT_001: Textarea for JSON Text -->
+            <!-- $REQ_JSON_INPUT_002: Drag-and-Drop Zone -->
+            <textarea
+                id="json-input"
+                placeholder="Paste JSON here or drag and drop a .json file..."
+                rows="10"
+            ></textarea>
+
+            <div class="input-controls">
+                <!-- $REQ_JSON_INPUT_003: File Picker -->
+                <input
+                    type="file"
+                    id="file-picker"
+                    accept=".json"
+                    style="display: none;"
+                >
+                <button id="file-picker-button" class="file-button">Choose File</button>
+
+                <!-- $REQ_JSON_INPUT_006: Visualize Button -->
+                <button id="visualize-button" class="visualize-button">Visualize</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- $REQ_TREE_RENDERING_001: Render JSON as Tree -->
+    <div id="tree-container" style="width: 100%; height: 600px; border: 1px solid #ccc; display: none;"></div>
+
+    <!-- $REQ_BUILD_003: Cytoscape as Local Static Files -->
+    <!-- $REQ_STATIC_003: Local Static Dependencies -->
+    <script src="cytoscape.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
