@@ -1,2 +1,7 @@
 tmp/
 ai-coder/
+
+tests/
+CLAUDE.md
+CODEX.md
+AGENTS.md
